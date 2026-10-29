@@ -1,6 +1,6 @@
 /* Connect your own Supabase project below. Never put a service_role/secret key here. */
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY";
+const SUPABASE_URL = "https://rjzupxmwccvjopsoiiei.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_doy7jywmNgHV6h2PyEOMWA_Q2k7pI_Z";
 const configured = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("YOUR_SUPABASE") && !SUPABASE_ANON_KEY.includes("YOUR_SUPABASE");
 const db = configured && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 const $ = id => document.getElementById(id); let mode = "login"; $("year").textContent = new Date().getFullYear();
